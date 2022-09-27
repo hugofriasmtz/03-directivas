@@ -17,8 +17,8 @@
     <h2 v-else-if="years < 18 && years >0 && years <100">Menor de edad</h2>
     <h2 v-else>Edad Invalida</h2>
 
-    <button @click="inc">incrementar</button>
-    <button @click="dis">disminuir</button>
+    <button type="button" class="btn btn-outline-warning " @click="inc">incrementar</button>
+    <button type="button" class="btn btn-outline-danger"  @click="dis">disminuir</button>
     <hr />
     
     <!-- coamndo v-for -->
@@ -52,7 +52,7 @@
     </ul>
     <hr />
     <!-- <h1>v-bind</h1> -->
-    <img v-bind:src="url" alt="No hay internet">  
+    <img v-bind:src="url" alt="Hay un">  
 
   </div>
 
@@ -68,10 +68,10 @@
       title: 'Hola desde Vue.js3',
       html: '<h3> Soy un H3</h3>',
       years: 0,
-      users: ["Melisa" , "Fernanda", "Raul","Uriel"], //comando v-for
+      users: ["Carla" , "Gabriel", "Karen","Uriel"], //comando v-for
       u_users:{name: "Yirsis"}, //comando v-for
       clicks: 0,
-      url: "https://cdn.svgporn.com/logos/dovetail-icon.svg",
+      url: "https://mediateca.educa.madrid.org/imagen.php?id=jmdtsfty5yqj699a&type=2&m=550",
     }),
     
     methods: {
@@ -95,11 +95,11 @@
     margin: 0px 2rem;
   }
   h2{
-    color: tomato;
+    color: blue;
   }
   .counter{
-    background: pink;
-    color: snow;
+    background: plum;
+    color: black;
     font-weight: bold;
     height: 400px;
 
